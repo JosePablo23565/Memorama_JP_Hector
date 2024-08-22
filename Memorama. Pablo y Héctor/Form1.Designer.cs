@@ -71,6 +71,8 @@
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.labelTime = new System.Windows.Forms.Label();
             this.lblScore = new System.Windows.Forms.Label();
+            this.lblAttempts = new System.Windows.Forms.Label();
+            this.btnRestart = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -614,43 +616,78 @@
             // 
             // labelTime
             // 
+            this.labelTime.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.labelTime.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTime.ForeColor = System.Drawing.Color.Black;
-            this.labelTime.Location = new System.Drawing.Point(752, 75);
+            this.labelTime.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.labelTime.Location = new System.Drawing.Point(752, 86);
             this.labelTime.MaximumSize = new System.Drawing.Size(140, 140);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(140, 60);
             this.labelTime.TabIndex = 1;
-            this.labelTime.Text = "Time:";
+            this.labelTime.Text = "Time: 0";
             this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblScore
             // 
+            this.lblScore.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.lblScore.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.ForeColor = System.Drawing.Color.Black;
-            this.lblScore.Location = new System.Drawing.Point(770, 154);
+            this.lblScore.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblScore.Location = new System.Drawing.Point(760, 181);
             this.lblScore.MaximumSize = new System.Drawing.Size(100, 100);
             this.lblScore.Name = "lblScore";
             this.lblScore.Size = new System.Drawing.Size(100, 60);
             this.lblScore.TabIndex = 2;
-            this.lblScore.Text = "Score:";
-            this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblScore.Text = "Score: 0";
+            this.lblScore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // lblAttempts
+            // 
+            this.lblAttempts.AutoSize = true;
+            this.lblAttempts.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblAttempts.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
+            this.lblAttempts.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblAttempts.Location = new System.Drawing.Point(760, 275);
+            this.lblAttempts.Name = "lblAttempts";
+            this.lblAttempts.Size = new System.Drawing.Size(116, 29);
+            this.lblAttempts.TabIndex = 3;
+            this.lblAttempts.Text = "Attemps: 0";
+            this.lblAttempts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnRestart
+            // 
+            this.btnRestart.BackColor = System.Drawing.Color.DarkGray;
+            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnRestart.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Bold);
+            this.btnRestart.ForeColor = System.Drawing.Color.DarkRed;
+            this.btnRestart.Location = new System.Drawing.Point(799, 590);
+            this.btnRestart.Name = "btnRestart";
+            this.btnRestart.Size = new System.Drawing.Size(108, 45);
+            this.btnRestart.TabIndex = 4;
+            this.btnRestart.Text = "Restart";
+            this.btnRestart.UseVisualStyleBackColor = false;
+            this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 650);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(952, 650);
+            this.Controls.Add(this.btnRestart);
+            this.Controls.Add(this.lblAttempts);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.labelTime);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ForeColor = System.Drawing.Color.Salmon;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Memory!";
             this.Click += new System.EventHandler(this.label_Click);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -697,6 +734,8 @@
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.Label labelTime;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.Label lblAttempts;
+        private System.Windows.Forms.Button btnRestart;
     }
 }
 

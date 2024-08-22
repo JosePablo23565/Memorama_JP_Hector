@@ -19,3 +19,4 @@ C:\Source\Memorama. Pablo y Héctor\Memorama. Pablo y Héctor\obj\Debug\Memorama
 C:\Source\Memorama. Pablo y Héctor\Memorama. Pablo y Héctor\obj\Debug\Memorama.Pablo_y_Héctor.exe
 C:\Source\Memorama. Pablo y Héctor\Memorama. Pablo y Héctor\obj\Debug\Memorama.Pablo_y_Héctor.pdb
 C:\Source\Memorama. Pablo y Héctor\Memorama. Pablo y Héctor\obj\Debug\Memorama.Pablo_y_Héctor.StartForm.resources
+C:\Source\Memorama. Pablo y Héctor\Memorama. Pablo y Héctor\bin\Debug\Audio\Megaman 3 Theme.wav
